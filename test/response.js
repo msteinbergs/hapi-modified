@@ -2116,7 +2116,7 @@ describe('Response', function () {
 
         it('returns error when file is removed before stream is opened', function (done) {
 
-            var filename = internals.uniqueFilename(Os.tmpDir());
+            var filename = internals.uniqueFilename(Os.tmpdir());
             Fs.writeFileSync(filename, 'data');
 
             var server = new Hapi.Server();

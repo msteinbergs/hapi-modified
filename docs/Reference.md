@@ -231,7 +231,7 @@ When creating a server instance, the following options configure the server's be
 - <a name="server.config.payload"></a>`payload` - controls how incoming payloads (request body) are processed:
     - `maxBytes` - limits the size of incoming payloads to the specified byte count. Allowing very large payloads may cause the server to run
       out of memory. Defaults to `1048576` (1MB).
-    - `uploads` - the directory used for writing file uploads. Defaults to `os.tmpDir()`.
+    - `uploads` - the directory used for writing file uploads. Defaults to `Os.tmpdir()`.
 
 - `plugins` - plugin-specific configuration which can later be accessed by `server.plugins`. Provides a place to store and pass plugin configuration that
   is at server-level. The `plugins` is an object where each key is a plugin name and the value is the configuration. Note the difference between

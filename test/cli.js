@@ -55,7 +55,7 @@ describe('bin/hapi', function () {
             }
         };
 
-        var configPath = Hoek.uniqueFilename(Os.tmpDir());
+        var configPath = Hoek.uniqueFilename(Os.tmpdir());
         var hapiPath = Path.join(__dirname, '..', 'bin', 'hapi');
         var modulePath = Path.join(__dirname, 'pack');
 
